@@ -1,6 +1,23 @@
 // VARIÁVEIS => Um espaço da memória do computador que guardamos algo (um numero, uma letra, um texto, uma imagem)
 // FUNÇÃO => Um trecho de código que só é executado quando é chamado
 
+function toggleMenu() {
+  var dropdown = document.querySelector('.dropdown-content');
+  dropdown.classList.toggle('show');
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.menu-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 let chave = "cebcd482eda57fa9a6714c1c2ba91885";
 
 function colocarNaTela(dados){
