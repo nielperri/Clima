@@ -5,6 +5,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.cabeça {
+    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;                                                 
+            display: flex;
+            align-items: center;
+            justify-content: space;
+            background-color: #000000;
+            padding: 3%;
+            opacity: 0.8;
+            color: #ffffff;
+            justify-content: center;
+            font-size: 30px; 
+}
+
+
 body {
     display: flex;
     justify-content: center;
@@ -14,8 +31,12 @@ body {
     width: 100vw;
     /*  vw - largura */
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
-}
+   background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem para que ela role com o conteúdo */
 
+}
+    
 .caixa-maior {
     background-color: #000000;/*  Troca cor de fundo  */
     width: 95%; /*  Largura  */
@@ -83,4 +104,8 @@ h2 {
 .umidade {
     color: #ffffff;
     margin-top: 30px;
-  }
+}
+.chance-chuva {
+    color: #ffffff;
+    margin-top: 30px;
+}
